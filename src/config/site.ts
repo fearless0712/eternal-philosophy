@@ -4,14 +4,14 @@ export const siteConfig = {
   siteName: "ETERNAL PHILOSOPHY",
   title: "ETERNAL PHILOSOPHY — AI Development & Automation",
   description: "AI development, automation, data systems, and digital products designed to create time. AI開発・業務自動化・データシステムを設計、開発します。",
-  email: "",
+  email: "hello.ep0222@gmail.com",
   emailSubject: {
     ja: "制作・開発のご相談 — ETERNAL PHILOSOPHY",
     en: "Project Inquiry — ETERNAL PHILOSOPHY",
   },
   githubUrl: "https://github.com/fearless0712",
-  linkedinUrl: "",
-  availableForProjects: false,
+  linkedinUrl: "https://www.linkedin.com/in/%E5%B0%86-%E6%9C%AC%E6%9D%89-aa1455405/",
+  availableForProjects: true,
   location: "Tokyo, Japan",
   siteUrl: configuredSiteUrl,
 } as const;
