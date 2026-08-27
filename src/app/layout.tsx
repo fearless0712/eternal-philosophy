@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Manrope } from "next/font/google";
 import { LocaleProvider } from "@/i18n/LocaleProvider";
 import { absoluteUrl, siteConfig } from "@/config/site";
+import { Analytics } from "@vercel/analytics/next";
+import { TrackingEvents } from "@/components/analytics/TrackingEvents";
 import "./globals.css";
 
 const display = Manrope({ subsets: ["latin"], variable: "--font-display" });
@@ -43,7 +45,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ja" className={`${display.variable} ${mono.variable}`}>
-      <body><LocaleProvider>{children}</LocaleProvider></body>
+      <body><LocaleProvider>{children}<TrackingEvents /></LocaleProvider><Analytics /></body>
     </html>
   );
 }

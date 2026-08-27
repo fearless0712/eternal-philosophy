@@ -13,8 +13,15 @@ export const siteCopy = {
     body1: { ja: "AI、自動化、Webシステムを設計する上で大切にしているのは、技術が仕事の中へ自然に溶け込み、人の注意と時間を取り戻すことです。", en: "I design AI, automation, and web systems around one belief: technology is most valuable when it disappears into the work and gives people their attention back." },
     body2: { ja: "ソフトウェアを増やすのではなく、意図を持って設計され、変化に対応し、新しい可能性を生み出す仕組みをつくります。", en: "Not more software. Better systems—built with intent, made to evolve, and measured by what they make possible." },
   },
+  contact: {
+    support: {
+      ja: "AI開発、業務自動化、Webシステム、データ活用。\nアイデア段階からご相談いただけます。",
+      en: "AI development, automation, web systems and data.\nProjects can begin with an idea.",
+    },
+  },
 } satisfies {
   heroFootnote: Localized<string>;
   services: { title: string; description: Localized<string> }[];
   about: Record<"accent" | "body1" | "body2", Localized<string>>;
+  contact: { support: Localized<string> };
 };
