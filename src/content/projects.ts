@@ -36,6 +36,7 @@ export const projects: Project[] = [
     year: "2026",
     technology: ["Python 3.12", "FastAPI", "Uvicorn", "Pydantic", "OpenAI Responses API", "Structured Outputs", "Jinja2", "JavaScript", "pytest"],
     githubUrl: "https://github.com/fearless0712/equa-flow",
+    liveUrl: "https://equa-flow.onrender.com/",
     status: "live",
     featured: true,
     content: {
@@ -105,6 +106,7 @@ export const projects: Project[] = [
     year: "2026",
     technology: ["Python", "FastAPI", "Jinja2", "SQLAlchemy", "PostgreSQL", "SQLite", "OpenAI Responses API", "Pydantic Structured Outputs", "Alembic", "Docker"],
     githubUrl: "https://github.com/fearless0712/ai-localization-app",
+    liveUrl: "https://ai-localization-app.onrender.com",
     status: "live",
     featured: true,
     content: {
@@ -139,7 +141,7 @@ export const projects: Project[] = [
     year: "2026",
     technology: ["Python", "Flask", "Jinja2", "Flask-Login", "Flask-Bcrypt", "Flask-WTF", "SQLAlchemy", "SQLite", "PostgreSQL", "Chart.js", "Bootstrap", "PWA", "Gunicorn", "Render"],
     githubUrl: "https://github.com/fearless0712/kakeibo-app",
-    liveUrl: "https://kakeibo-app-mihg.onrender.com/login",
+    liveUrl: "https://kakeibo-app-mihg.onrender.com/login?next=%2F",
     status: "live",
     featured: true,
     content: {
