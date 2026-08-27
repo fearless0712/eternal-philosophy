@@ -1,0 +1,27 @@
+.caseStudy { --black: #050505; --ivory: #eeeae2; --silver: #9b9d9a; --line: #292927; --champagne: #c9b58a; min-height: 100vh; padding: 0 3.2vw; background: var(--black); color: var(--ivory); }
+.header { height: 104px; padding-top: 29px; display: flex; justify-content: space-between; font: 600 9px/.9 var(--font-mono); letter-spacing: .12em; }
+.headerTools { display: flex; align-items: flex-start; gap: clamp(24px, 3vw, 48px); }
+.hero { min-height: 88svh; padding: 18vh 0 8vh; display: grid; align-content: center; }
+.hero > p { color: var(--champagne); font: 500 8px/1 var(--font-mono); letter-spacing: .16em; }
+.hero h1 { margin: 5vh 0; max-width: 1300px; font: 600 clamp(70px, 13vw, 220px)/.74 var(--font-display); letter-spacing: -.085em; }
+.hero > span { max-width: 480px; margin-left: auto; color: var(--silver); font: 400 clamp(14px, 1.2vw, 19px)/1.5 var(--font-display); }
+.projectMeta { padding: 28px 0; display: grid; grid-template-columns: 1fr 1fr auto; gap: 32px; border-top: 1px solid var(--line); color: var(--silver); font: 500 8px/1.5 var(--font-mono); letter-spacing: .12em; }
+.projectMeta p { display: grid; grid-template-columns: 80px 1fr; }
+.projectMeta p span { color: var(--champagne); }
+.projectMeta > div { display: flex; gap: 24px; color: var(--ivory); }
+.sections { border-top: 1px solid var(--line); }
+.sections section { min-height: 300px; padding: 65px 0; display: grid; grid-template-columns: 8% 30% 1fr; border-bottom: 1px solid var(--line); }
+.sections span { color: var(--champagne); font: 500 8px/1 var(--font-mono); }
+.sections h2 { font: 580 clamp(32px, 4.5vw, 72px)/.9 var(--font-display); letter-spacing: -.06em; }
+.sections p { max-width: 660px; overflow-wrap: anywhere; line-break: strict; color: var(--silver); font: 400 clamp(16px, 1.5vw, 23px)/1.7 var(--font-display); }
+.caseStudy footer { padding: 18vh 0 8vh; text-align: right; font: 500 9px/1 var(--font-mono); letter-spacing: .15em; }
+@media (max-width: 760px) {
+  .caseStudy { padding-inline: 20px; }
+  .header { height: 76px; padding-top: 21px; }
+  .hero h1 { font-size: 19vw; }
+  .hero > span { margin-left: 18%; }
+  .projectMeta { grid-template-columns: 1fr; }
+  .projectMeta p { grid-template-columns: 70px 1fr; }
+  .sections section { min-height: 260px; grid-template-columns: 42px 1fr; }
+  .sections p { grid-column: 2; margin-top: 35px; }
+}

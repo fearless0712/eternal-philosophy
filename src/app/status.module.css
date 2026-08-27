@@ -1,0 +1,14 @@
+.screen { min-height: 100svh; padding: 6vh 3.2vw; display: flex; flex-direction: column; justify-content: space-between; background: #050505; color: #eeeae2; }
+.brand, .index, .action { font: 500 8px/1 var(--font-mono); letter-spacing: .17em; }
+.brand { font-weight: 700; line-height: .85; letter-spacing: -.04em; }
+.index { color: #c9b58a; }
+.message { margin: auto 0; font: 600 clamp(72px, 15vw, 250px)/.72 var(--font-display); letter-spacing: -.085em; }
+.action { align-self: flex-end; padding: 18px 0; border: 0; border-bottom: 1px solid #9b9d9a; color: #eeeae2; background: none; cursor: pointer; transition: padding .3s ease, color .3s ease; }
+.action:hover, .action:focus-visible { padding-inline: 14px; color: #c9b58a; outline: none; }
+.loading { min-height: 100svh; display: grid; place-items: center; background: #050505; color: #9b9d9a; }
+.loadingInner { display: flex; flex-direction: column; align-items: center; gap: 18px; font: 500 7px/1 var(--font-mono); letter-spacing: .2em; }
+.line { width: 96px; height: 1px; overflow: hidden; background: #292927; }
+.line::after { content: ""; display: block; width: 40%; height: 100%; background: #c9b58a; animation: loadingLine 1.4s ease-in-out infinite; }
+@keyframes loadingLine { 0% { transform: translateX(-120%); } 100% { transform: translateX(350%); } }
+@media (max-width: 760px) { .screen { padding: 28px 20px; } .message { font-size: 20vw; } }
+@media (prefers-reduced-motion: reduce) { .line::after { width: 100%; animation: none; } }

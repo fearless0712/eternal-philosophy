@@ -1,0 +1,6 @@
+* { box-sizing: border-box; padding: 0; margin: 0; }
+html { background: #050505; scroll-behavior: smooth; }
+body { background: #050505; color: #e9e9e4; font-family: var(--font-display), sans-serif; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { color: #050505; background: #b8ff3d; }
